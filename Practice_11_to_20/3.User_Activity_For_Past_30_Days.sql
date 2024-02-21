@@ -52,7 +52,7 @@ Output:
 | 2019-07-21 | 2            |
 +------------+--------------+ 
 Explanation: Note that we do not care about days with zero active users.
- */
+ */ 
 
 -- Solution
 SELECT activity_date AS day, COUNT(DISTINCT user_id) AS active_users
