@@ -1,6 +1,6 @@
 -- Write a solution to report the fraction of players that logged in again on the day after the day they first logged in, rounded to 2 decimal places.
 
-/* Table: Activity
+/* Table: Activity 
 
 +--------------+---------+
 | Column Name  | Type    |
