@@ -1,6 +1,6 @@
 -- find the daily active user count for a period of 30 days ending 2019-07-27 inclusively
 
-/* Table: Activity
+/* Table: Activity 
 
 +---------------+---------+
 | Column Name   | Type    |
