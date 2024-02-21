@@ -24,7 +24,7 @@ The result format is shown in the following example.
 
 Example 1:
 
-Input: 
+Input:  
 Teacher table:
 +------------+------------+---------+
 | teacher_id | subject_id | dept_id |
@@ -59,4 +59,4 @@ Teacher 2:
 
 SELECT teacher_id, COUNT(DISTINCT subject_id) AS cnt
 FROM Teacher  
-GROUP BY teacher_id;
+GROUP BY teacher_id; 
