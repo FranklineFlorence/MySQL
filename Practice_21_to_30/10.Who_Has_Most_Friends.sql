@@ -1,3 +1,5 @@
+-- Find the people who have the most friends and the most friends number.
+
 /* Table: RequestAccepted
 
 +----------------+---------+
@@ -44,3 +46,16 @@ The person with id 3 is a friend of people 1, 2, and 4, so he has three friends 
  
 
 Follow up: In the real world, multiple people could have the same most number of friends. Could you find all these people in this case? */
+
+--Solution1
+WITH cte AS (
+    SELECT requester_id AS id FROM RequestAccepted
+    UNION ALL
+    SELECT accepter_id AS id FROM RequestAccepted
+)
+
+SELECT id, COUNT(*) AS num 
+FROM cte 
+GROUP BY id
+ORDER BY num DESC
+LIMIT 1;
